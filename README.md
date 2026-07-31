@@ -1,10 +1,10 @@
 # AVCCDP
-This repository contains the instances used in our paper "Meals on Autonomous Wheels: Delivery with Vehicle-Customer Coordination".
+This repository includes the instances and source code used in our paper "Meals on Autonomous Wheels: Delivery with Vehicle-Customer Coordination".
 
 With the rapid advancement of autonomous driving technology, autonomous meal delivery has emerged as a promising solution for efficient urban logistics. This paper studies the Autonomous Vehicle-Customer Coordination Delivery Problem (AVCCDP). Specifically, we introduce a vehicle-customer coordination mechanism in which autonomous vehicles serve as mobile lockers (secure, temporary pickup points). This mechanism enables flexible parking and guided customer movement to improve delivery efficiency while maintaining user convenience. Given the time-sensitive nature of meal delivery and the need to encourage customer movement, it is essential to jointly optimize delivery routes and customer movements. We formalize this challenge as a nondeterministic polynomial-time (NP)-hard problem. Furthermore, the AVCCDP provides a generalized framework that is applicable to both the order batching policy (OBP) and the order postponement policy (OPP).
 
 ## Instances
-The [Instances](./Instances) folder contains all data instances used in this research, which are divided into two main categories: offline instances and online instances.
+The [repository](./repository) folder contains all data instances used in this research, which are divided into two main categories: offline instances and online instances.
 
 ### (i) Offline Instances
 - All offline networks are modified based on the Solomon benchmark for VRPTW. The letters C, R, and RC refer to clustered distribution networks, random distribution networks, and clustered-random mixed distribution networks, respectively. The number of customers and the case number are also included in the filename. For example, "C1_N20" indicates that this instance is the first clustered distribution case with 20 customer points. The instance file format is described as follows:
@@ -38,4 +38,4 @@ The [Instances](./Instances) folder contains all data instances used in this res
 - Regarding the file format, online instances follow the same structure as offline instances, with one addition: the "StringID" field includes a new node identifier "S" to represent public parking spots.
 
 ## Algorithm
-We developed a branch-and-price framework equipped with a customized re-labeling algorithm. The corresponding code scripts are provided in the [src](./Instances/src) folder.
+We developed a branch-and-price framework equipped with a customized re-labeling algorithm. The corresponding code scripts are provided in the [src](./repository/src) folder.
