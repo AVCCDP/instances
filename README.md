@@ -36,3 +36,6 @@ The [Instances](./Instances) folder contains all data instances used in this res
   - _move: This suffix indicates the order data under the OPP strategy with the coordination mechanism enabled during this period.
  
 - Regarding the file format, online instances follow the same structure as offline instances, with one addition: the "StringID" field includes a new node identifier "S" to represent public parking spots.
+
+## Algorithm
+We developed a branch-and-price framework equipped with a customized re-labeling algorithm. The corresponding code scripts are provided in the [src](./Instances/src) folder.
